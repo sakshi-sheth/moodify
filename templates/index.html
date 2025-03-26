@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodify - Find Songs for Your Mood</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Moodify - Find Songs for Your Mood</h1>
+
+      <div class="mood-buttons">
+        <button class="mood-button" data-mood="Happy">Happy</button>
+        <button class="mood-button" data-mood="Sad">Sad</button>
+        <button class="mood-button" data-mood="Relaxed">Relaxed</button>
+        <button class="mood-button" data-mood="Energetic">Energetic</button>
+        <button class="mood-button" data-mood="Romantic">Romantic</button>
+        <div id="song-list"></div>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="songSearch" placeholder="Search for a song..." />
+        <button class="search-btn" onclick="searchSong()">Search</button>
+      </div>
+
+      <div class="song-list" id="song-list"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>

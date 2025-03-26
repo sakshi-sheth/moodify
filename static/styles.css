@@ -1,0 +1,142 @@
+/* Cozy Background with Pinkish Blue Gradient */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Expanded White Box - Full Screen Fit */
+.container {
+  background-color: linear-gradient(
+    to right,
+    #fef8ee,
+    #fcb69f
+  ); /* Bright white */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 55%;
+  max-width: 1000px;
+  height: 65vh;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Mood buttons */
+.mood-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 14px 20px;
+  border: none;
+  background: #ffadad;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: #feb47b;
+  transform: scale(1.1);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+input {
+  padding: 14px;
+  width: 70%;
+  border: 2px solid #ff7e5f;
+  border-radius: 30px;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 14px 24px;
+  margin-left: 12px;
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #feb47b;
+  transform: scale(1.05);
+}
+
+/* Song Results */
+.song-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.song-item {
+  background: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.song-item:hover {
+  transform: scale(1.05);
+  background: #ffe5d9;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
